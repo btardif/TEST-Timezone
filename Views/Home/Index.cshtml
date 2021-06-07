@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    TimeZoneInfo localZone = TimeZoneInfo.Local;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div>
+<h2>Timezone Data</h2>
+    <ul>
+        <li>Local Time Zone ID: <strong>@localZone.Id</strong></li>
+        <li>Display Name is: <strong>@localZone.DisplayName</strong></li>
+        <li>Standard name is: <strong>@localZone.StandardName</strong></li>
+        <li>Daylight saving name is: <strong>@localZone.DaylightName</strong></li>
+    </ul>
+</div>
